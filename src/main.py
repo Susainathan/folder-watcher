@@ -1,9 +1,9 @@
 import json, os, time
 import logging.config
-from helphers.WatcherConfig import WatcherConfig
+from helpers.WatcherConfig import WatcherConfig
 from handlers.WatchDog import WatchDog
 from watchdog import observers
-from helphers.Logger import LOGGING_CONFIG
+from helpers.Logger import LOGGING_CONFIG
 from handlers.RmqHandler import Rmq
 
 

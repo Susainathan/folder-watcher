@@ -1,0 +1,23 @@
+
+{
+    "workFlows": [
+        "xml-central"
+    ],
+    "fileConfig": {
+        "watchPath": "{{watchPath}}",
+        "destinationPath": "{{destinationPath}}"
+    },
+    "queueConfig": {
+        "notifyCreate": {
+            "exchangeName": "{{exchangeName}}",
+            "routingKey": "{{routingKey}}"
+        },
+        "connnectionConfig": {
+            "host": "{{host}}",
+            "port": {{port}},
+            "username": "{{username}}",
+            "password": "{{password}}",
+            "vhost": "{{vhost}}"
+        }
+    }
+}
