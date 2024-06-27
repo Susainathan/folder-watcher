@@ -19,7 +19,9 @@ class Watcher():
         try:
             while True:
                 time.sleep(0.25)
-        except (KeyboardInterrupt, SystemExit):
+        except SystemExit:
+            observer.stop()
+        except KeyboardInterrupt:
             observer.stop()
         finally:
             observer.join()
