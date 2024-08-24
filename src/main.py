@@ -7,6 +7,8 @@ from helpers.Logger import LOGGING_CONFIG
 from handlers.RmqHandler import Rmq
 
 
+
+
 logging.config.dictConfig(LOGGING_CONFIG)
 
 class Watcher():
