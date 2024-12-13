@@ -1,25 +1,18 @@
-name: SSH Login
+name: Ping Server
 
 on:
   push:
     branches: [main]
 
 jobs:
-  ssh-login:
+  ping-server:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
-      - name: SSH and Ping
-        uses: appleboy/ssh-action@master
-        with:
-          host: 10.0.36.124
-          username: susainathan
-          key: Delis+1.618
-          script: |
+      - name: Ping Server
+        run: |
             ping 10.0.36.124
-            ssh user@10.0.36.124
-            echo "Successfully logged in to the server."
 
 # name: CodeGuru Security Example
 # on:
